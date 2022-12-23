@@ -1,5 +1,6 @@
 extends Node2D
 
+
 func intro():
 	$AnimationLogo.play("Roll in")
 	yield(get_tree().create_timer(3), "timeout")
@@ -16,5 +17,5 @@ func pulsation():
 	$AnimationLogo.play("Pulsation")
 
 func reset():
-	$AnimationLogo.play("RESET")
+	#$AnimationLogo.play("RESET")
 	$AnimationRect.play("RESET")

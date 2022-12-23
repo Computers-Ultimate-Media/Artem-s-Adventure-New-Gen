@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Rage Shouting.mp3-f3e544c6ae61c3b75b7b21376425822e.mp3str"
+
+[deps]
+
+source_file="res://OBJ/White Frog/SND/Rage Shouting.mp3"
+dest_files=[ "res://.import/Rage Shouting.mp3-f3e544c6ae61c3b75b7b21376425822e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
