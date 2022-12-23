@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Portalhole.mp3-61081ad694467ff4ba1fd5ea38045a96.mp3str"
+
+[deps]
+
+source_file="res://RES/music/Portalhole.mp3"
+dest_files=[ "res://.import/Portalhole.mp3-61081ad694467ff4ba1fd5ea38045a96.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
