@@ -10,7 +10,7 @@ var can_move = false
 var direction
 
 #bullet
-var bullet = preload("res://OBJ/Projectiles/Projectile.tscn")
+var bullet = preload("res://OBJ/Projectiles/SCN/PlayerBasicProjectile.tscn")
 var can_fire = true
 var rate_of_fire = 0.4
 #######

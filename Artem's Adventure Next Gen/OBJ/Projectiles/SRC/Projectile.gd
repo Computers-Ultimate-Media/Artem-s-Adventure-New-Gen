@@ -1,5 +1,7 @@
 extends RigidBody2D
 
+class_name projectile
+
 var bullet_speed = 2000
 var life_time = 1
 

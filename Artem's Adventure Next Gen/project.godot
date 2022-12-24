@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "Red_alert",
 "language": "GDScript",
 "path": "res://LVL/2 Main Screen/SRC/start_text.gd"
+}, {
+"base": "RigidBody2D",
+"class": "projectile",
+"language": "GDScript",
+"path": "res://OBJ/Projectiles/SRC/Projectile.gd"
 } ]
 _global_script_class_icons={
 "Player": "",
-"Red_alert": ""
+"Red_alert": "",
+"projectile": ""
 }
 
 [application]
@@ -36,6 +42,7 @@ boot_splash/bg_color=Color( 0, 0, 0, 1 )
 
 MusicController="*res://SCN/MusicController/MusicController.tscn"
 UiController="*res://SCN/UIController/UIController.tscn"
+GuiController="*res://SCN/GUIController/GUIController.tscn"
 
 [display]
 

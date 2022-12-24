@@ -118,7 +118,7 @@ func _physics_process(delta) -> void:
 	
 	#print(String(velocity.x) + " | " + String(velocity.y) + " | " + String(LAST_DIRECTION))
 	#print(CURRENT_ACCELERATION)
-	print(is_on_wall())
+	#print(is_on_wall())
 	pass
 
 
