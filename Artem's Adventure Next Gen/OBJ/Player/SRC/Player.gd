@@ -111,6 +111,15 @@ func _physics_process(delta) -> void:
 	if not $RightUpCollideCheck.is_colliding() and not $LeftUpCollideCheck.is_colliding():
 		wall_jump = true
 	
+	#ZOOM
+	if abs(velocity.x) > 1000 or abs(velocity.y) > 1000:
+		$Camera2D.zoom.x = move_toward($Camera2D.zoom.x, abs(highest(abs(velocity.x), abs(velocity.y)))/1000, 0.01)
+		$Camera2D.zoom.y = move_toward($Camera2D.zoom.y, abs(highest(abs(velocity.x), abs(velocity.y)))/1000, 0.01)
+		pass
+	else:
+		$Camera2D.zoom.x = move_toward($Camera2D.zoom.x, 1, 0.01)
+		$Camera2D.zoom.y = move_toward($Camera2D.zoom.y, 1, 0.01)
+	
 	#return wall_jump if is in air 
 	#if (was_on_wall and not is_on_wall()) or is_on_floor():
 	#if not $LeftUpCollideCheck.is_colliding() and not $RightUpCollideCheck.is_colliding():
@@ -153,6 +162,8 @@ func animation():
 	else:
 		$AnimatedSprite.play("idle")
 
+func highest(x, y):
+	return x * int(x > y) + y * int(y > x)
 
 func _on_CoyoteTimer_timeout():
 	coyote_jump = false
