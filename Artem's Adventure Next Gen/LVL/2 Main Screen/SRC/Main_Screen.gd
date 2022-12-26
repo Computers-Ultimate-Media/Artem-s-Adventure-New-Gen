@@ -3,6 +3,7 @@ extends Node2D
 #TODO: fix the timers!
 
 func _ready():
+	MusicController.play_music()
 	$Control.hide()
 	play_animation()
 
