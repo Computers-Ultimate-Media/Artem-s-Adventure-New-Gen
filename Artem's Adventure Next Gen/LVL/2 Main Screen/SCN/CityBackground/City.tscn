@@ -1,0 +1,84 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://LVL/2 Main Screen/SCN/CityBackground/IMG/Заборчики2.png" type="Texture" id=1]
+[ext_resource path="res://LVL/2 Main Screen/SCN/CityBackground/IMG/ТипоРечка.png" type="Texture" id=2]
+[ext_resource path="res://LVL/2 Main Screen/SCN/CityBackground/IMG/Домики2.png" type="Texture" id=3]
+[ext_resource path="res://LVL/2 Main Screen/SCN/CityBackground/IMG/Фон.png" type="Texture" id=4]
+[ext_resource path="res://LVL/2 Main Screen/SCN/CityBackground/IMG/Тяночка11.png" type="Texture" id=5]
+
+[sub_resource type="Environment" id=3]
+background_mode = 4
+glow_enabled = true
+glow_levels/3 = false
+glow_levels/5 = false
+glow_levels/7 = true
+glow_intensity = 8.0
+glow_strength = 1.21
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 1920, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+angular_velocity = 100.0
+angular_velocity_random = 0.4
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 6.0
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 2
+emission_box_extents = Vector3( 1920, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+angular_velocity = 90.0
+angular_velocity_random = 0.4
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 8.0
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Sky"]
+position = Vector2( 959, 540 )
+texture = ExtResource( 4 )
+
+[node name="City" type="ParallaxLayer" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="City"]
+environment = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="City"]
+position = Vector2( 959, 367 )
+texture = ExtResource( 3 )
+
+[node name="River" type="ParallaxLayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="River"]
+position = Vector2( 957, 539 )
+texture = ExtResource( 2 )
+
+[node name="Tyan" type="Sprite" parent="."]
+position = Vector2( 1198, 490 )
+scale = Vector2( 0.799539, 0.799539 )
+texture = ExtResource( 5 )
+
+[node name="Back" type="Particles2D" parent="."]
+position = Vector2( 0, -28 )
+amount = 500
+lifetime = 5.0
+randomness = 1.0
+process_material = SubResource( 1 )
+
+[node name="Handrail" type="Sprite" parent="."]
+position = Vector2( 961, 734 )
+texture = ExtResource( 1 )
+
+[node name="Forward" type="Particles2D" parent="."]
+position = Vector2( 0, -28 )
+amount = 300
+lifetime = 4.5
+randomness = 1.0
+process_material = SubResource( 2 )
