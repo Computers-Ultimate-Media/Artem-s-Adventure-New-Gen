@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://LVL/2 Main Screen/IMG/AALogo.png" type="Texture" id=1]
 [ext_resource path="res://LVL/2 Main Screen/SRC/Main_Screen.gd" type="Script" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://LVL/2 Main Screen/SCN/ParallaxBackground.tscn" type="PackedScene" id=5]
 [ext_resource path="res://LVL/2 Main Screen/SCN/Menu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://LVL/2 Main Screen/SCN/Animation intro/AnimationIntro.tscn" type="PackedScene" id=7]
-[ext_resource path="res://LVL/2 Main Screen/SCN/CityBackground/City.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=6]
 size = 36
@@ -171,9 +170,6 @@ tracks/0/keys = {
 script = ExtResource( 2 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 5 )]
-visible = false
-
-[node name="ParallaxBackground2" parent="." instance=ExtResource( 8 )]
 
 [node name="PressStartMessage" type="RichTextLabel" parent="."]
 margin_top = 784.0

@@ -1,21 +1,24 @@
 extends Node2D
 
+var stop: bool = false
 
 func intro():
 	$AnimationLogo.play("Roll in")
 	yield(get_tree().create_timer(3), "timeout")
-	$AnimationLogo.play("Fly in")
+	if not stop: $AnimationLogo.play("Fly in")
 	yield(get_tree().create_timer(0.5), "timeout")
-	$AnimationRect.play("Flashbang")
+	if not stop: $AnimationRect.play("Flashbang")
 	yield(get_tree().create_timer(0.2), "timeout")
-	$ColorRectBlack.hide()
-	$AnimationRect.play("Dispersion")
+	if not stop: $ColorRectBlack.hide()
+	if not stop: $AnimationRect.play("Dispersion")
 	yield(get_tree().create_timer(1.5), "timeout")
-	$AnimationLogo.play("Dispersion")
+	if not stop: $AnimationLogo.play("Dispersion")
 
 func pulsation():
 	$AnimationLogo.play("Pulsation")
 
 func reset():
 	#$AnimationLogo.play("RESET")
+	stop = true
+	$ColorRectBlack.hide()
 	$AnimationRect.play("RESET")

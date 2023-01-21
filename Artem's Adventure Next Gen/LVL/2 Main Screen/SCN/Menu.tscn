@@ -38,7 +38,7 @@ margin_bottom = 56.0
 size_flags_vertical = 14
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Copyright (C) Computers Ultimate Media, 2021-2022."
+text = "Copyright (C) Computers Ultimate Media, 2021-2023."
 align = 1
 
 [node name="Label3" type="Label" parent="VBoxContainer"]

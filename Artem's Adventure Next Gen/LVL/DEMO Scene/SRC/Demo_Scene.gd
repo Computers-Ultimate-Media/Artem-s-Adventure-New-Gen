@@ -1,4 +1,5 @@
 extends Node2D
 
 func _ready():
+	VisualServer.set_default_clear_color(Color.black)
 	GuiController.game_session = true
