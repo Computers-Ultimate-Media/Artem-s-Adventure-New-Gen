@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/undertale_001. Once Upon a Time.mp3-c905529aa43126081b16a3c335407b3c.mp3str"
+
+[deps]
+
+source_file="res://RES/music/undertale_001. Once Upon a Time.mp3"
+dest_files=[ "res://.import/undertale_001. Once Upon a Time.mp3-c905529aa43126081b16a3c335407b3c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
