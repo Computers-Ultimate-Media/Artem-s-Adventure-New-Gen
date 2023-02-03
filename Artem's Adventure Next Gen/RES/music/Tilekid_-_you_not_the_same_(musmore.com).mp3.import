@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tilekid_-_you_not_the_same_(musmore.com).mp3-9c0cc2a755d4ee68fafd71543682528f.mp3str"
+
+[deps]
+
+source_file="res://RES/music/Tilekid_-_you_not_the_same_(musmore.com).mp3"
+dest_files=[ "res://.import/Tilekid_-_you_not_the_same_(musmore.com).mp3-9c0cc2a755d4ee68fafd71543682528f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

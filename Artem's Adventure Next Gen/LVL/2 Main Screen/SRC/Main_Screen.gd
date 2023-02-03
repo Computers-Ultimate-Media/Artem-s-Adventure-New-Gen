@@ -2,7 +2,10 @@ extends Node2D
 
 #TODO: fix the timers!
 
+var intro_music = load("res://RES/music/Saul.mp3")
+
 func _ready():
+	MusicController.play_music(intro_music)
 	$Control.hide()
 	play_animation()
 

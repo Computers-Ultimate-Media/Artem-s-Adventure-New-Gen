@@ -6,6 +6,7 @@ func _ready():
 	$AnimationPlayer.play("Idle")
 
 func _on_White_Forg_body_entered(body):
+	print("YAYKS")
 	if (body is projectile):
 		$AnimationPlayer.play("Shouting")
 		shout()
